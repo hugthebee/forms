@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img
+          src="./images/ellie.jpg"
+          alt="background image of ellie from the last of us game"
+        />
+      </div>
+        <form method="post">
+            <div class="form">
+          <div>
+            <p>
+              Congratulations! You have found the secret website of the Jackson
+              Community. We believe in co-operation and co-existence and welcome
+              anyone who is ready to leave behind the ways of violence and
+              contribute to the livlihood of a shared community!
+            </p>
+            <p>Sign up now! (you know you want to)</p>
+          </div>
+          <h3>Let's do this!</h3>
+          <div class="signup">
+            <div class="col1">
+              <div class="fields">
+                <input
+                  type="text"
+                  name="first_name"
+                  placeholder="Ellie"
+                  id="fname"
+                  required
+                />
+                <label for="fname">First Name *</label>
+              </div>
+              <div class="fields">
+                <input
+                  type="text"
+                  name="last_name"
+                  placeholder="Williams"
+                  id="lname"
+                  required
+                />
+                <label for="lname">Last Name *</label>
+              </div>
+              <div class="fields">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="@gmail.com"
+                  id="email"
+                />
+                <label for="email">E-mail</label>
+              </div>
+            </div>
+            <div class="col2">
+              <div class="fields">
+                <input type="tel" name="phone" id="phone" maxlength="10" />
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="fields">
+                <input type="password" name="password" id="pass" minlength=8 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$ %^&*_=+-]).{8,}" required />
+                <label for="pass">Password *</label>
+              </div>
+              <div class="fields">
+                <input type="password" id="cpass" minlength=8 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$ %^&*_=+-]).{8,}" required />
+                <label for="cpass">Confirm Password *</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
+          <div class="login">
+            Already have an account? <a href="#">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
